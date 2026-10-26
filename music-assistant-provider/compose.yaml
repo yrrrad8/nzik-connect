@@ -1,0 +1,24 @@
+name: nzik-poc
+services:
+  music-assistant:
+    image: nzik-music-assistant:2.10.8-poc
+    build:
+      context: ..
+      dockerfile: music-assistant-provider/Dockerfile
+    ports:
+      - "127.0.0.1:8095:8095"
+    volumes:
+      - ma-poc-data:/data
+    restart: unless-stopped
+  nzik:
+    image: nzik-connect:poc
+    build:
+      context: ..
+      dockerfile: connect-server/Dockerfile
+    network_mode: service:music-assistant
+    environment:
+      NZIK_CONNECT_TOKEN: ${NZIK_CONNECT_TOKEN:?Set a random 32-256 character token}
+    command: ["serve", "--port", "8765"]
+    restart: unless-stopped
+volumes:
+  ma-poc-data:

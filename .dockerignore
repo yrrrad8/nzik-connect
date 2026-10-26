@@ -1,0 +1,9 @@
+.git
+.gradle
+.kotlin
+**/build
+**/local.properties
+.env
+.secrets
+*.jks
+*.keystore

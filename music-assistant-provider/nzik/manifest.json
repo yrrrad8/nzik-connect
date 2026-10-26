@@ -1,0 +1,10 @@
+{
+  "type": "music",
+  "domain": "nzik",
+  "name": "NZIK Connect (POC)",
+  "description": "Search and play songs through a standalone NZIK Kotlin server.",
+  "codeowners": ["@N-Zik-Group"],
+  "requirements": [],
+  "multi_instance": false,
+  "documentation": "https://github.com/N-Zik-Group/N-Zik"
+}

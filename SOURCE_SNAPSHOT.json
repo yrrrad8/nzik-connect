@@ -1,0 +1,914 @@
+{
+  "sourceProject": "https://github.com/N-Zik-Group/N-Zik",
+  "sourceRevision": "55d94de950f86c20bc19820cc7b36ec50e0c77f8",
+  "distributionRepository": "https://github.com/yrrrad8/nzik-connect",
+  "sourceFileCount": 151,
+  "sourceFiles": [
+    {
+      "path": ".dockerignore",
+      "gitMode": "100644",
+      "gitBlobSha": "cdd5f2cf94630fe6cf431ae7966e3409c9f0a70b",
+      "bytes": 81
+    },
+    {
+      "path": ".gitignore",
+      "gitMode": "100644",
+      "gitBlobSha": "a9eaabdbc89d2c811adce5ed2b4982ada7c3ef40",
+      "bytes": 492
+    },
+    {
+      "path": "LICENSE",
+      "gitMode": "100644",
+      "gitBlobSha": "35d7a24c6522fcba78229347ee26f9803d1fa8a0",
+      "bytes": 35145
+    },
+    {
+      "path": "build.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "f8e1d6561eada54eb98100f8f8a656c265f4b0fb",
+      "bytes": 433
+    },
+    {
+      "path": "connect-server/Dockerfile",
+      "gitMode": "100644",
+      "gitBlobSha": "f8adebe6586b3428cea0caebbc223b66ba255e4a",
+      "bytes": 1274
+    },
+    {
+      "path": "connect-server/README.md",
+      "gitMode": "100644",
+      "gitBlobSha": "f5198c9529ea7c67e46ba56af48ad0d5b6db4ae8",
+      "bytes": 7110
+    },
+    {
+      "path": "connect-server/build.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "72eef71d785648290688f4a7b51cdaecb05e6f74",
+      "bytes": 1609
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/AudioResolver.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "cb5448c80a9a3d42c027db3a08e2fbfa00dbfff8",
+      "bytes": 4759
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/ConnectApi.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "2f5ba574c29c41aef24334e5b962d77c80afba9c",
+      "bytes": 7258
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/ConnectModels.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "0ccd5b1b7cd82bb010760a720409747bb96e401e",
+      "bytes": 2532
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/InnerTubeMusicService.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "0e53e4230755691034a769c1d3ec8d8599f567a2",
+      "bytes": 4652
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/Main.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "b949990eea4c578837ac288900dac8553538ae9a",
+      "bytes": 5039
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/PcmVerifier.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "15725f92468998c959ff22ddf8b182fbde511de4",
+      "bytes": 3989
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/SmokeRunner.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8ff0ae0ceb04cfa32ed01a547217f712c9b950c6",
+      "bytes": 2743
+    },
+    {
+      "path": "connect-server/src/main/kotlin/app/n_zik/android/connect/StreamConsumer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8f4accb56ae042afb203c2cb04eb2f5290bcf333",
+      "bytes": 7724
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/AudioResolverTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "ab793ff91f1db1f1df354744b87f8423068f1a28",
+      "bytes": 4236
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/ConnectApiTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "4ccb57bc2a5b74fd1f4e78a34707b49e67168571",
+      "bytes": 10338
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/KtorDirectFetcherTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "ca40aedf8a6fa48f1e54c579b574b09474310af3",
+      "bytes": 4280
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/MusicMappingTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "e42f2938e096bd72977c71e55601c91375ba5d2a",
+      "bytes": 2193
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/PcmVerifierTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "d678387aea4dad15bdf9ba88ecb7d7441fd5e110",
+      "bytes": 6886
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/SmokeRunnerTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a343daac57c3d5934939181a93c384e33bfa0d2b",
+      "bytes": 5297
+    },
+    {
+      "path": "connect-server/src/test/kotlin/app/n_zik/android/connect/StreamConsumerTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "222a1b28bc80f4afd9c0fc340af94e5d81920428",
+      "bytes": 6616
+    },
+    {
+      "path": "extensions/innertube/.gitignore",
+      "gitMode": "100644",
+      "gitBlobSha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "bytes": 6
+    },
+    {
+      "path": "extensions/innertube/build.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "72af6af00eb3567ef780217c8d0f4a284d007bd7",
+      "bytes": 979
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/Innertube.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "e32ead0ee71c8e12616ae650695e99ae1b83590a",
+      "bytes": 38696
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/InnertubeHttpException.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "e5c52d773d3f18819d596d12039c99227c5537a7",
+      "bytes": 449
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/YtMusic.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6372fd058570e95f3b56bcff786fd91401a7fe09",
+      "bytes": 32012
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/clients/YouTubeLocale.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a22fd4c35e66a3cf480ad435a2010faa74ece5b9",
+      "bytes": 194
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/AccountInfo.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "498bb3201d815f3ccc936202edd764f8da254dba",
+      "bytes": 171
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/AccountMenuResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "082e500fb43f662d0e725d6e91d4e105b18bb4e1",
+      "bytes": 2595
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/BadgesRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "c7295ddd511108772cba36b99efbde771a66dc14",
+      "bytes": 368
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/BrowseResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "0b18a2559e0324cc188ca555971f77902a3436f8",
+      "bytes": 5731
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/ButtonRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a7a06ca74a158eb0a961902961501caaf38ec7c9",
+      "bytes": 170
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Continuation.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "442300073bf83b02ba145ba77203e254c16110bc",
+      "bytes": 453
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/ContinuationResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "633286832cc621baaae8cbec60567cd91c5a2666",
+      "bytes": 605
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/CreatePlaylistResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "925cbf95a1449178144a8b2238839d89cd8ac75f",
+      "bytes": 157
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Endpoint.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "1a2a0d12c7cdc6dbf497e29cc48124c58657db9e",
+      "bytes": 3835
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/GetQueueResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "84139ef0a583a92056204cb58f33bc25eeeb5020",
+      "bytes": 308
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/GetSearchSuggestionsResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9848bed57047204a4ddd9f4952e7bedee2521551",
+      "bytes": 302
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/GridRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "f9be33685662247c651750398a8fd05a62578305",
+      "bytes": 513
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Icon.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "857353787b8aef647a06d8c5925f81d540fb845e",
+      "bytes": 145
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MediaType.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8426c8b19a42692fc59647ca6883a23447f70abb",
+      "bytes": 134
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Menu.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "2916afceabfded84f70b7f81852c1143a9dc2f68",
+      "bytes": 1574
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicCarouselShelfRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "5475da7c2225ce0f98e85e485fbd43fab6757268",
+      "bytes": 1193
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicEditablePlaylistDetailHeaderRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8afd3d2281b159872b5aa649a6eebdcadbffe23a",
+      "bytes": 828
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicNavigationButtonRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6171d18220f3f0359aebf62f439cacbe0fd85c3e",
+      "bytes": 491
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicPlaylistShelfRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3da1447f2382ce3348f4f42ddb64adbc9c2109a7",
+      "bytes": 294
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicResponsiveHeaderRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "0f1503a9001606f06750db2f6e1b6f18ebe62580",
+      "bytes": 819
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicResponsiveListItemRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "72aa489c4e4c8baaa7349d18458b06660c0d90fe",
+      "bytes": 2674
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicShelfRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "aa25b6dd33945c02645365502b0fda69974d23b7",
+      "bytes": 3247
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/MusicTwoRowItemRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "5bf00f0822b38a651f6d52502c9f1187cd9daa3e",
+      "bytes": 5729
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/NavigationEndpoint.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "947620118aa2973ff1cf3deb2d5766d0f987e4da",
+      "bytes": 4007
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/NextResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3a65b19c78aa5e66216b352d3a5853553a4da137",
+      "bytes": 7816
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/PlayerResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "48ad0b11f685362ecc46c3f195336390b802fcef",
+      "bytes": 5480
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/PlaylistPanelVideoRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6fc1853a37ec85657206fccb45fc9f5917f611e4",
+      "bytes": 411
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/ResponseContext.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "406e32e035acc962a958f65dd7cb469693201310",
+      "bytes": 968
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Runs.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "c392bfd5636032fbcc4406fb7748e7ae9a2e5da0",
+      "bytes": 3018
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/SearchResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "95bc752e764e780732738a620f42471d8f3ed130",
+      "bytes": 251
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/SearchSuggestionsResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3e5baaaad258b03c472d8d037a5b9a76d4d10c5e",
+      "bytes": 770
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/SearchSuggestionsSectionRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a7b3da5a436b9580aa522600fee2021e20014fea",
+      "bytes": 544
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/SectionListRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "b4543651ddf3100a33c675e7831d0923079bd622",
+      "bytes": 2580
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/SubscriptionButton.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "4dd840e5247236e5b556cb733b20afe07735d8e6",
+      "bytes": 396
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Tabs.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "863b6d23931295a29eec08d00990290ffa6b2dee",
+      "bytes": 750
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Thumbnail.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8be7de6072a1def8d6c772ca9b4b8024382faab5",
+      "bytes": 181
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/ThumbnailRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "63c3438da6171971a5a9ac39b0b49646d5288722",
+      "bytes": 1364
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/Thumbnails.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "475d51a9664f1e048710f89abee9a03c5ebfabec",
+      "bytes": 154
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/VideoOrSongInfo.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "c393545fc6f475369050253b4c82f9a494a47d7d",
+      "bytes": 437
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/v0624/BrowseResponse0624.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6d89a3f34a6d9e8a7e1654713a3d8b8b7a24d2e1",
+      "bytes": 19590
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/v0624/charts/BrowseChartsResponse0624.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "f3a550dfe1b8861fec728baa9c4d75cf8ceb527a",
+      "bytes": 25015
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/models/v0624/podcasts/BrowsePodcastsResponse0624.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "fece232ca5b658d85a7b6ed24bb889887709ea4d",
+      "bytes": 23648
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/AlbumPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "94ba4ce462aca38622f0c87ec227ff72eb00fe0b",
+      "bytes": 7627
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ArtistInfoPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "5a221e85831808876ae9bfc0153513cec667f6aa",
+      "bytes": 4385
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ArtistItemsContinuationPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "1b0ed6e3895a3c0b8430cdbd1a2e80b9a060ed45",
+      "bytes": 187
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ArtistItemsPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8ed79e409c173d1d97009abf907a9be4f0626611",
+      "bytes": 8712
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ArtistPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "eff2c9983980b80af310af7d78041b93b6fc1f5e",
+      "bytes": 9883
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/Browse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3a4101b0b062009adbe593dd3491a673913ba588",
+      "bytes": 2244
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ChartsPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "e73c38ad0aadb89799bd88908574b80792815c1b",
+      "bytes": 3420
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ChartsPageComplete.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "4ad1d5de17ec70e5edea8e97e5ffc9d8098a389f",
+      "bytes": 16002
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/DiscoverPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9afb5bb2663ef8eae927f4364818bd50bbc456b0",
+      "bytes": 3333
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/HistoryPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "cc74ee14459d12b1a3112bfc0ba8029a71dea64e",
+      "bytes": 3446
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/HomePage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9c92cb02699b001626d5b7645f1f3c058fe7226d",
+      "bytes": 7999
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/ItemsPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a082232e314e6464f9554d465eeebbfb1f8bd0a4",
+      "bytes": 3405
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/LibraryContinuationPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "ad285f96847316b8d11aa761e30d8fd69f527c7b",
+      "bytes": 182
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/LibraryPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "2211cca360edbb5dd239782124850b4e6bf73a37",
+      "bytes": 11608
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/Lyrics.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9ee783b06c0c1e5123e2e6d3c48e3992d472a448",
+      "bytes": 1012
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/NewReleaseAlbumPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "2b5695cc70a5f51549d8934a580c9938c4b91285",
+      "bytes": 1759
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/NextPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6ff4ed05699604199e5acaf7b712208b49dcec6d",
+      "bytes": 2772
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/PlaylistContinuationPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "b798b6d2737795273c868af19f1af91ffd532f56",
+      "bytes": 188
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/PlaylistPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3f74497b86a15a5e981d1ba167afd9fb219dbaba",
+      "bytes": 9865
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/PodcastPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "d4e064ca7d5c0b31af97fd54bd345dbca426d064",
+      "bytes": 9058
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/Queue.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "34ce4b325e3c3b30686c0894a44f794b7ce9fd9d",
+      "bytes": 792
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/RelatedPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "935b3fb8242615b8a80966a9ea9f53d5bc88babe",
+      "bytes": 2644
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/RelatedSongs.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "bfa4cb8f1a55dcc19d2f2ee890582286a96c3f9d",
+      "bytes": 2237
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/SearchPage.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9111d13bab714e182d6e060355db99a110b7e4c8",
+      "bytes": 2040
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/SearchSuggestions.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "6ecf943314e4129989c5fa0a6808432e04b43c07",
+      "bytes": 6344
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/requests/SongInfo.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "d6c12b92cb914fc7a48d30c48080c8bf3f30a944",
+      "bytes": 12749
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/FromMusicResponsiveListItemRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "2e371c56f2a41157516a2452145c5099918d323f",
+      "bytes": 3093
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/FromMusicShelfRendererContent.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "bd4ce685b07ade656b18d531330f2743cfa0407a",
+      "bytes": 8643
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/FromMusicTwoRowItemRenderer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "fc5b4958261ae4a8e227e26ea32c35d1b3cf99c3",
+      "bytes": 2787
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/InnertubeLogger.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "f00f73f83adf1c6889ce395cd4ece0517f20449f",
+      "bytes": 1115
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/LocalePreferences.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "a5cd5cf04c82528c290516084b6bdc4fca5d4ae7",
+      "bytes": 187
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/PageHelper.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "d310e5628c5884eaeee4091cb0c897df8b7eb863",
+      "bytes": 995
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/ProxyPreferences.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "5679e3c979fe58844104457fb5585b0979109e02",
+      "bytes": 601
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/Utils.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "3ae2bc2e54d9fd51d7bea884f9a1b4820e13a195",
+      "bytes": 5233
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/it/fast4x/innertube/utils/YoutubePreferences.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "dba1138b5962d9974716c158226a6f4ecbadfc5f",
+      "bytes": 357
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/common/HttpFetcher.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "87ffb8ecf91a243476ee1a9e115ad8037e754145",
+      "bytes": 9583
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/common/PublicInstances.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "80873255f105136532c56d6db56f7a98468a2aa7",
+      "bytes": 1589
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/common/response/AudioFormat.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9b6cca8369ada4750e810bbdfd6b251e9c9860bc",
+      "bytes": 430
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/common/response/MediaFormatContainer.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "c40481c641d3f83dd5b6ebb406c0f3dcae7b2ba1",
+      "bytes": 439
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/invidious/Invidious.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8f71a6f125397b5183157151ec928c53cc8abcf3",
+      "bytes": 3682
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/invidious/request/Player.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "8ba404533fedd5d0e352be219c5cbcc71fa244a8",
+      "bytes": 1036
+    },
+    {
+      "path": "extensions/innertube/src/main/kotlin/me/knighthat/invidious/response/PlayerResponse.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "804cc14112b980f93b285e74569db6049bfe7dac",
+      "bytes": 1017
+    },
+    {
+      "path": "extensions/innertube/src/test/kotlin/it/fast4x/innertube/InnertubeSearchLoginTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "d65bcab96dfdb840023097ee0bb7745ae5e4ef02",
+      "bytes": 3632
+    },
+    {
+      "path": "extensions/innertube/src/test/kotlin/it/fast4x/innertube/requests/LibraryPageSongAuthorsTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "de6539ca77fec7a049052a610c509acc7f34012f",
+      "bytes": 6787
+    },
+    {
+      "path": "extensions/innertube/src/test/kotlin/it/fast4x/innertube/requests/RelatedSongsTabSelectionTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "796f21795a775fcec63f735ead75af7cbac564af",
+      "bytes": 3248
+    },
+    {
+      "path": "extensions/innertube/src/test/kotlin/it/fast4x/innertube/utils/SongItemFromResponsiveListItemAuthorsTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "f40ef24ce65a179d21ffae49d8f7fc7efec2512d",
+      "bytes": 6625
+    },
+    {
+      "path": "extensions/innertube/src/test/kotlin/me/knighthat/invidious/InvidiousScopeTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "f74b6c84cd1c8e7fe6ee0de83c2fc12b3f1f6e88",
+      "bytes": 3243
+    },
+    {
+      "path": "extensions/invidious/build.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "a9e6f1743ba3cafe33e356de6a0f1f67bde83af5",
+      "bytes": 760
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/Invidious.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "bef680d802fee1baf163b713b51905ce835a1252",
+      "bytes": 5630
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/models/AdaptiveFormats.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "cd84270a4237679a7f1319a0d4424ca715a58d15",
+      "bytes": 1642
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/models/Instances.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "268a8aa897c97f8f0dcc2d7b35375340d5d87952",
+      "bytes": 587
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/utils/Coroutines.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "9f36fe6f31d2d75144a1170d8f9a263669b1279a",
+      "bytes": 454
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/utils/InvidiousLogger.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "1d1150f522bfc67547a168fe166c4a85a1ec1bf8",
+      "bytes": 1115
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/utils/ProxyPreferences.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "86dd19fe3f0e4c1b827d188cb940f9567a61807d",
+      "bytes": 601
+    },
+    {
+      "path": "extensions/invidious/src/main/kotlin/it/fast4x/invidious/utils/Serializers.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "24d981ec4f4ddd3be6d65260743a7bf84a5b09a6",
+      "bytes": 1254
+    },
+    {
+      "path": "extensions/invidious/src/test/kotlin/it/fast4x/invidious/InvidiousOfflineGateTest.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "519e9575da193fe70a7ba1f14c8a497ead6e6e8f",
+      "bytes": 2660
+    },
+    {
+      "path": "extensions/ktor-client-brotli/.gitignore",
+      "gitMode": "100644",
+      "gitBlobSha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "bytes": 6
+    },
+    {
+      "path": "extensions/ktor-client-brotli/build.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "05739f88eb1d0b765e74982a881a159631ec4a59",
+      "bytes": 174
+    },
+    {
+      "path": "extensions/ktor-client-brotli/src/main/kotlin/io/ktor/client/plugins/compression/BrotliEncoder.kt",
+      "gitMode": "100644",
+      "gitBlobSha": "466df3db877e1611ecc0d90b6e2ac41577340e4e",
+      "bytes": 1182
+    },
+    {
+      "path": "gradle.properties",
+      "gitMode": "100644",
+      "gitBlobSha": "0a4a9b9f13d4d83138fd2c74a8551bacac51079b",
+      "bytes": 575
+    },
+    {
+      "path": "gradle/gradle-daemon-jvm.properties",
+      "gitMode": "100644",
+      "gitBlobSha": "6c1139ec06ae4e5307f6f0ea75ff8338aa2d4b72",
+      "bytes": 1138
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "gitMode": "100644",
+      "gitBlobSha": "9416d01a7199993572dba77dc99680b0f199bda0",
+      "bytes": 13468
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "gitMode": "100644",
+      "gitBlobSha": "9fa7f288283f81eec4952784c271abd7e0938dee",
+      "bytes": 48749
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "gitMode": "100644",
+      "gitBlobSha": "2e7bb9fd6ab07c0350540fe458e1865de3ed5185",
+      "bytes": 281
+    },
+    {
+      "path": "gradlew",
+      "gitMode": "100755",
+      "gitBlobSha": "249efbb032ce46a80c687c0723eb172e85f6a136",
+      "bytes": 8656
+    },
+    {
+      "path": "gradlew.bat",
+      "gitMode": "100644",
+      "gitBlobSha": "03754c4c3d9206f5c9ef69e41990dfe26a05251e",
+      "bytes": 4888
+    },
+    {
+      "path": "music-assistant-provider/.gitignore",
+      "gitMode": "100644",
+      "gitBlobSha": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "bytes": 19
+    },
+    {
+      "path": "music-assistant-provider/Dockerfile",
+      "gitMode": "100644",
+      "gitBlobSha": "2513a616115573c855daad3e78a25fb2fba5ad51",
+      "bytes": 664
+    },
+    {
+      "path": "music-assistant-provider/NOTICE.md",
+      "gitMode": "100644",
+      "gitBlobSha": "13667b43d0bc5f3cf2195d34919c2bbafa109078",
+      "bytes": 816
+    },
+    {
+      "path": "music-assistant-provider/README.md",
+      "gitMode": "100644",
+      "gitBlobSha": "f3af5901059192aef325a090ce196f7a4f1904f4",
+      "bytes": 6131
+    },
+    {
+      "path": "music-assistant-provider/compose.host.yaml",
+      "gitMode": "100644",
+      "gitBlobSha": "d234f26a4e67b0d94bc65def2ac515fa470e2977",
+      "bytes": 104
+    },
+    {
+      "path": "music-assistant-provider/compose.yaml",
+      "gitMode": "100644",
+      "gitBlobSha": "89ac5f2750d1837e0fb1430748175285bd1242ec",
+      "bytes": 624
+    },
+    {
+      "path": "music-assistant-provider/nzik/__init__.py",
+      "gitMode": "100644",
+      "gitBlobSha": "bc78a59df1a2f38fb3de21a5e75cb44f47e88d08",
+      "bytes": 8728
+    },
+    {
+      "path": "music-assistant-provider/nzik/client.py",
+      "gitMode": "100644",
+      "gitBlobSha": "e67686763123654dcbe1ec7a8adfa48d1cb9d330",
+      "bytes": 5974
+    },
+    {
+      "path": "music-assistant-provider/nzik/logging_filter.py",
+      "gitMode": "100644",
+      "gitBlobSha": "c4d953a2a44d2f9e2561afeb4cd9b5f166956946",
+      "bytes": 1731
+    },
+    {
+      "path": "music-assistant-provider/nzik/manifest.json",
+      "gitMode": "100644",
+      "gitBlobSha": "b4802dfeefc7e868c11b55cf13bd1d33f26a4919",
+      "bytes": 299
+    },
+    {
+      "path": "music-assistant-provider/nzik/setup_flow.py",
+      "gitMode": "100644",
+      "gitBlobSha": "6f271c15abc5962eff0d780fa1acf1713af71a72",
+      "bytes": 1679
+    },
+    {
+      "path": "music-assistant-provider/tests/install_smoke.py",
+      "gitMode": "100644",
+      "gitBlobSha": "9e47e3d9b59f41a20c3b3692ceb87c556bbe9f6a",
+      "bytes": 4903
+    },
+    {
+      "path": "music-assistant-provider/tests/integration_smoke.py",
+      "gitMode": "100644",
+      "gitBlobSha": "5601f81171840d588f5c3e81de4d84652b9f7cf8",
+      "bytes": 4306
+    },
+    {
+      "path": "music-assistant-provider/tests/test_provider.py",
+      "gitMode": "100644",
+      "gitBlobSha": "d89114b0b2b674bcd13db80efa1f78d9629a7216",
+      "bytes": 9755
+    },
+    {
+      "path": "settings.gradle.kts",
+      "gitMode": "100644",
+      "gitBlobSha": "f2b383d0dca01596cae97ce31ed76ad8798bf76f",
+      "bytes": 1525
+    }
+  ]
+}

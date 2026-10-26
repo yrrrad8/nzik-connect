@@ -1,0 +1,6 @@
+services:
+  music-assistant:
+    network_mode: host
+    ports: !reset []
+  nzik:
+    network_mode: host
