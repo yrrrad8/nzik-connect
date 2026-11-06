@@ -23,12 +23,14 @@ The original Gradle layout is preserved for code sharing. Always use `-PconnectO
 
 ## Verified scope and limitations
 
-Search, metadata, provider discovery/setup and real decoding through MA's audio engine were verified locally. A complete track decoded 248.413 seconds; seeking to 30 seconds decoded the expected remainder; a second track produced audio. Eight adapter tests, sixteen focused server tests, and the Docker builds passed. Physical speakers and deployment on the user's HA server still need verification.
+Search, metadata, provider discovery/setup and real decoding through MA's audio engine were verified locally. A complete track decoded 248.413 seconds; seeking to 30 seconds decoded the expected remainder; a second track produced audio. Sixteen focused server tests and the Docker builds passed. After the metadata-hydration fix, all thirteen provider tests passed on MA 2.10.6 and 2.10.8 with models 1.1.205.
+
+On 2026-11-06, the provider was updated in an existing home MA 2.10.8 installation. Stronger Closer by 8th Day played through NZIK Connect on ReSpeaker Salon Music for more than ninety seconds, and audible playback was confirmed. The phone was not involved. This was a short smoke test; full-track completion, seeking, source expiration, reconnect and extended reliability remain unverified on that home installation. Opening the track-detail page stalled in the first browser tab; playback from search succeeded in a fresh tab.
 
 This is a POC for anonymous publicly playable tracks and Direct HTTP audio. See [known issues](KNOWN_ISSUES.md) for the eight accepted follow-ups. Personal libraries, album/artist/playlist browsing, Android handoff and Range/SABR/HLS playback through this adapter are not implemented. The official HA App has no external-provider installer; this snapshot uses Docker packaging.
 
 ## Source and licensing
 
-The implementation is an unchanged tracked-file export from reviewed local NZIK revision `55d94de950f86c20bc19820cc7b36ec50e0c77f8`. The canonical project is [N-Zik](https://github.com/N-Zik-Group/N-Zik); this local revision has not been published upstream. [SOURCE_SNAPSHOT.json](SOURCE_SNAPSHOT.json) records source paths, Git blob hashes and modes so later exports can be audited without maintaining a second implementation.
+The implementation is an unchanged tracked-file export from reviewed local NZIK revision `fede4c3b4406a8165de33a0ce9411241f793074e`. The canonical project is [N-Zik](https://github.com/N-Zik-Group/N-Zik); this local revision has not been published upstream. [SOURCE_SNAPSHOT.json](SOURCE_SNAPSHOT.json) records source paths, Git blob hashes and modes so later exports can be audited without maintaining a second implementation.
 
 Source code is covered by the included [GPL-3.0 license](LICENSE). Preserve the original notices and [provider attribution](music-assistant-provider/NOTICE.md). Music Assistant remains its separately licensed upstream software. No tokens, local settings, generated build files or binary application packages are included.

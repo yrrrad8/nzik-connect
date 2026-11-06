@@ -74,13 +74,27 @@ installation on a trusted home network. Opening the phone is not required.
 
 ## Verification
 
-Adapter tests use real MA models, aiohttp fixtures and the pinned Python runtime:
+Adapter tests use real MA models, aiohttp fixtures and the pinned Python runtime.
+The metadata regressions also use MA's actual track, album and artist controllers,
+URI resolution and queue entry point. Only storage, network and player boundaries
+are simulated. Explicit queue `ADD` stages a track without starting playback.
+
+From the repository root, build the test image if needed, then run the suite without
+production data, device discovery or published ports. The provider mount tests the
+current source even when the image was built before a local edit:
 
 ```sh
-docker compose -f music-assistant-provider/compose.yaml run --rm --no-deps \
-  --entrypoint python -v "${PWD}/music-assistant-provider:/work:ro" -w /work \
-  music-assistant -m unittest discover -s tests -v
+docker compose -f music-assistant-provider/compose.yaml build music-assistant
+docker run --rm --network none --read-only --tmpfs /tmp:rw,nosuid,nodev,size=128m \
+  --entrypoint python -v "${PWD}/music-assistant-provider:/work:ro" \
+  -v "${PWD}/music-assistant-provider/nzik:/app/venv/lib/python3.14/site-packages/music_assistant/providers/nzik:ro" \
+  nzik-music-assistant:2.10.8-poc -B -m unittest discover -s /work/tests -p 'test_*.py' -v
 ```
+
+Tracks carry complete artist metadata with the existing name-derived IDs. Standalone
+artist and album lookups return MA's typed `MediaNotFoundError`; the normal track
+controller retains the album label through its fallback. These embedded values do
+not add artist/album catalog capabilities or require a warm search cache.
 
 For a live full-song/seek/second-track check, start the services first, then:
 
@@ -92,20 +106,28 @@ docker run --rm --network "container:$(docker compose -f music-assistant-provide
 ```
 
 The smoke instantiates the real provider and MA `StreamsAudio`, consumes PCM in memory,
-and prints a sanitized JSON result. It does not attach physical hardware and does not
-persist audio. The provider installs a logging filter on MA's root handlers to redact
+and prints a sanitized JSON result. It starts at the decoder boundary and does not
+exercise catalog hydration or normal queue entry. It does not attach physical hardware
+or persist audio. The provider installs a logging filter on MA's root handlers to redact
 googlevideo media addresses and credential headers, including upstream FFmpeg exception
 tails. Keep normal logging at info level and inspect diagnostics before sharing them.
 
 Verified on 2026-10-26: all eight adapter tests passed. Actual Compose startup, provider
 discovery/setup and MA server search passed; the saved token was encrypted on disk and
-absent from the configuration API. The live MA pipeline decoded 248.413 seconds for
+absent from the configuration API. The local decoder helper decoded 248.413 seconds for
 `Rgrt_8mXrK8`, seek to 30 seconds decoded 218.421 seconds, and `4D7u5KF7SP8` decoded a
 five-second sample. Physical speaker output and the user's HA deployment remain unverified.
 `tests/install_smoke.py` separately verifies discovery, setup and search against a fresh,
 disposable MA server in that namespace. It creates an administrator with a random password;
 never run it against an installation you intend to keep. Both container builds and
 Android `assembleDebug` passed. Kotlin tasks were unchanged and up-to-date.
+
+Verified on 2026-10-27: all 13 adapter and metadata/queue regression tests passed on
+MA 2.10.8 and the tested MA 2.10.6 image, both using models 1.1.205. The unchanged
+original adapter failed the same metadata/queue regressions with `NotImplementedError`
+in both versions. Cold-cache loading, retained artist/album names, absent artwork,
+optional metadata and typed unsupported lookups are covered. Physical playback of
+this repair remains pending; these local results do not establish speaker output.
 
 ## Stop and rollback
 

@@ -1,4 +1,4 @@
-"""NZIK adapter for Music Assistant 2.10.8; YouTube logic runs in Kotlin."""
+"""NZIK adapter for Music Assistant; YouTube logic runs in Kotlin."""
 
 from __future__ import annotations
 
@@ -12,6 +12,8 @@ from urllib.parse import urlsplit
 from music_assistant_models.enums import ContentType, ImageType, MediaType, ProviderFeature, StreamType
 from music_assistant_models.errors import LoginFailed, MediaNotFoundError, ResourceTemporarilyUnavailable
 from music_assistant_models.media_items import (
+    Album,
+    Artist,
     AudioFormat,
     ItemMapping,
     MediaItemImage,
@@ -86,6 +88,14 @@ class NzikProvider(MusicProvider):
         except BackendError as error:
             raise MediaNotFoundError(f"NZIK metadata unavailable: {error.reason}") from None
 
+    async def get_artist(self, prov_artist_id: str) -> Artist:
+        """Keep unsupported standalone lookups within MA's metadata fallback."""
+        raise MediaNotFoundError("Standalone artist lookup is not supported by the NZIK POC")
+
+    async def get_album(self, prov_album_id: str) -> Album:
+        """Keep unsupported standalone lookups within MA's metadata fallback."""
+        raise MediaNotFoundError("Standalone album lookup is not supported by the NZIK POC")
+
     async def get_stream_details(self, item_id: str, media_type: MediaType) -> StreamDetails:
         """Resolve an internal audio address just before Music Assistant plays it."""
         if media_type != MediaType.TRACK:
@@ -122,6 +132,22 @@ class NzikProvider(MusicProvider):
             duration = row.get("durationSeconds")
             if duration is not None and (type(duration) is not int or duration < 0):
                 raise ValueError
+            track_artists: UniqueList[Artist] = UniqueList()
+            for name in artists:
+                if not name.strip():
+                    continue
+                artist_id = "name-" + hashlib.sha256(name.encode()).hexdigest()[:24]
+                track_artists.append(Artist(
+                    item_id=artist_id,
+                    provider=self.instance_id,
+                    name=name,
+                    provider_mappings={ProviderMapping(
+                        item_id=artist_id,
+                        provider_domain=self.domain,
+                        provider_instance=self.instance_id,
+                        available=False,
+                    )},
+                ))
             track = Track(
                 item_id=row["id"],
                 provider=self.instance_id,
@@ -133,14 +159,7 @@ class NzikProvider(MusicProvider):
                         provider_instance=self.instance_id,
                     )
                 },
-                artists=UniqueList(
-                    ItemMapping(
-                        media_type=MediaType.ARTIST,
-                        item_id="name-" + hashlib.sha256(name.encode()).hexdigest()[:24],
-                        provider=self.instance_id,
-                        name=name,
-                    ) for name in artists if name.strip()
-                ),
+                artists=track_artists,
             )
             if row.get("album"):
                 track.album = ItemMapping(

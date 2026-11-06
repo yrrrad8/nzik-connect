@@ -1,8 +1,8 @@
 {
   "sourceProject": "https://github.com/N-Zik-Group/N-Zik",
-  "sourceRevision": "55d94de950f86c20bc19820cc7b36ec50e0c77f8",
+  "sourceRevision": "fede4c3b4406a8165de33a0ce9411241f793074e",
   "distributionRepository": "https://github.com/yrrrad8/nzik-connect",
-  "sourceFileCount": 151,
+  "sourceFileCount": 152,
   "sourceFiles": [
     {
       "path": ".dockerignore",
@@ -841,8 +841,8 @@
     {
       "path": "music-assistant-provider/README.md",
       "gitMode": "100644",
-      "gitBlobSha": "f3af5901059192aef325a090ce196f7a4f1904f4",
-      "bytes": 6131
+      "gitBlobSha": "968342beb6cc893d60ff2d3bbb5e6f3efda3adca",
+      "bytes": 7762
     },
     {
       "path": "music-assistant-provider/compose.host.yaml",
@@ -859,8 +859,8 @@
     {
       "path": "music-assistant-provider/nzik/__init__.py",
       "gitMode": "100644",
-      "gitBlobSha": "bc78a59df1a2f38fb3de21a5e75cb44f47e88d08",
-      "bytes": 8728
+      "gitBlobSha": "792c0124cb9daf86fe17b78b93648fcce843bdb0",
+      "bytes": 9585
     },
     {
       "path": "music-assistant-provider/nzik/client.py",
@@ -897,6 +897,12 @@
       "gitMode": "100644",
       "gitBlobSha": "5601f81171840d588f5c3e81de4d84652b9f7cf8",
       "bytes": 4306
+    },
+    {
+      "path": "music-assistant-provider/tests/test_hydration.py",
+      "gitMode": "100644",
+      "gitBlobSha": "bf130d22250bf4295938a5fbfafbe802271242db",
+      "bytes": 9244
     },
     {
       "path": "music-assistant-provider/tests/test_provider.py",
